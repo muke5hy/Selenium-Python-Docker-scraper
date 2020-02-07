@@ -11,7 +11,7 @@ Run ```fab help``` for tasks
    - Runs a container, mounting ./code and local /etc/hosts, runs ./code/main.py and removes the container when done
  - ```fab test```
    - Runs a container, mounting ./code and local /etc/hosts, runs ./code/test.py and removes the container when done
-
+  
 
 #### RUN CONTAINER:
 
@@ -20,10 +20,10 @@ Run ```fab help``` for tasks
  docker run --rm -v $(pwd)/code:/code -v /etc/hosts:/etc/hosts -it selenium python /code/main.py
  ```
 
-
+  
 #### EXAMPLE OF CODE WITH SELENIUM AND FIREFOX:
 ```
-from pyvirtualdisplay import Display
+from pyvirtualdisplay import Display  
 from selenium import webdriver
 
 display = Display(visible=0, size=(800, 600))

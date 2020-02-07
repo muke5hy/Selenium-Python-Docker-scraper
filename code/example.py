@@ -10,6 +10,7 @@ class Example:
 
         # now Firefox will run in a virtual display.
         # you will not see the browser.
+
         # start Chrome
         chrome_options = Options()
         chrome_options.add_argument("--headless")
